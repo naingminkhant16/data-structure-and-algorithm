@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+// Big O notation Time Complexity - O(n^2)
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {7, 12, 9, 11, 3};
