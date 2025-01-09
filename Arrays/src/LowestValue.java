@@ -11,7 +11,6 @@ public class LowestValue {
 
         for (int i : arr) {
             if (i < lowest) lowest = i;
-            else continue;
         }
         return lowest;
     }
