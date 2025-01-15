@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.Arrays;
 
 // Big O notation Time Complexity - O(n^2)
@@ -5,7 +7,7 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {7, 12, 9, 11, 3};
         int numOfOperation = 0;
-        
+
         System.out.println("Initial Array : " + Arrays.toString(arr) + "\n");
 
         // (arr.length - 1) Ignore last index cuz biggest value will be put at last cell after one loop.
