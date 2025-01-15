@@ -1,3 +1,5 @@
+package Arrays;
+
 // Simple Algorithm for finding lowest value (using loop through all data)
 // Time Complexity O(n)
 public class LowestValue {
