@@ -14,18 +14,27 @@ class Node {
 }
 
 public class BreathFirstSearch {
-    private static void bsfTree(Node root) {
+    private static void bsfTreeSearch(Node root, int goal) {
         if (root == null) return;
         Queue<Node> queue = new LinkedList<>();
+        List<Integer> path = new ArrayList<>();
+
         queue.offer(root);
         while (!queue.isEmpty()) {
             // remove front
             Node current = queue.poll();
+            path.add(current.data);
+            if (goal == current.data) {
+                System.out.println("Goal Found : " + current.data);
+                System.out.println("Path : " + path);
+                return;
+            }
             System.out.println(current.data);
             for (Node child : current.children) {
                 queue.offer(child);
             }
         }
+        System.out.println("Goal not found!");
     }
 
     public static void main(String[] args) {
@@ -51,7 +60,7 @@ public class BreathFirstSearch {
         rootNode.children.add(secondNode);
         rootNode.children.add(thirdNode);
 
-        bsfTree(rootNode);
+        bsfTreeSearch(rootNode, 2);
     }
 }
 
