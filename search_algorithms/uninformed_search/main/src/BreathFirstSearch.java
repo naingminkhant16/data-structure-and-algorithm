@@ -3,16 +3,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class Node {
-    public int data;
-    public List<Node> children;
-
-    public Node(int data) {
-        this.data = data;
-        this.children = new ArrayList<>();
-    }
-}
-
 public class BreathFirstSearch {
     private static void bsfTreeSearch(Node root, int goal) {
         if (root == null) return;
