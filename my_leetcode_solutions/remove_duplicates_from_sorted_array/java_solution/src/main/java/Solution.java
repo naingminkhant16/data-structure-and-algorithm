@@ -7,8 +7,8 @@ public class Solution {
     public static void main(String[] args) {
         System.out.println("hello world");
         Integer[] numbers = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-//        Integer[] nums = {0, 0, 0, 1};
-//        Integer[] nums = {1, 1, 2};
+//        Integer[] numbers = {0, 0, 0, 1};
+//        Integer[] numbers = {1, 1, 2};
         Integer k = removeDuplicates(numbers);
         System.out.println("K " + k);
         System.out.print("Numbers : ");
