@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     //    Constraints:
     //    The number of nodes in the list is in the range [0, 300].
